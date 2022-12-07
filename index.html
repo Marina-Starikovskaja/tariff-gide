@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="uk" translate="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Платформа управління процесами та продуктами Банку</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css" />
+  </head>
+
+
+  <body>
+
+
+    <!--Шапка-->
+    <header class="page-header">
+      <div class="container-header">
+        <div>
+          <a href="./index.html" class="title-page">
+            <span>
+              <svg class="button-icon" width="32px" height="32px">
+                <use href="./images/icons.svg#folder-open"></use>
+              </svg>
+            </span>
+            Тарифи
+          </a>
+        </div>
+
+        <div class="search">
+          <div class="block-svg">
+            <input class="search-input" type="text" name="search-query" placeholder="Пошук тарифу">
+            <!-- <svg class="search-icon" width="32px" height="32px">
+              <use href="./images/icons.svg#search"></use>
+            </svg> -->
+          </div>
+        </div>
+
+        <div class="add-rate">
+          <a href="./rate.html" class="add-rate-link">
+            <!-- <span> -->
+              <svg class="button-icon" width="32px" height="32px">
+                <use href="./images/icons.svg#add-circle"></use>
+              </svg>
+            <!-- </span> -->
+            Додати тариф
+          </a>
+        </div>
+      </div>
+    </header>
+
+
+    <!-- Таблица тарифов -->
+
+
+    <section class="section">
+      <H1 class="title">Каталог тарифів</H1>
+      <table class="table-rate">
+        <thead>
+          <tr>
+            <th width="10px">№</th>
+            <th>Назва продукту</th>
+            <th>Назва послуги</th>
+            <th>Опис тарифу</th>
+            <th>Платник комісії</th>
+            <th>База нарахування комісії</th>
+            <th>Тип комісії</th>
+            <th>Валюта операції</th>
+            <th>Канал проведення операції</th>
+            <th>Значення тарифу</th>
+            <th>Статус тарифу</th>
+            <th>
+              <a href="" class="add-rate-link">
+                <svg class="icon-add-square" width="32px" height="32px">
+                  <use href="./images/icons.svg#add-square"></use>
+                </svg>
+              </a>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>
+              <a href="" class="prodact-link">Картка для Виплат/Картка для Виплат GOLD</a>
+            </td>
+            <td>Картки для виплат з індивідуальним дизайном</td>
+            <td>Комісія за поповнення Картки для виплат з індивідуальним дизайном безготівковим платежем від третіх осіб без її
+            наявності</td>
+            <td>Власник карти/рахунку/скриньки</td>
+            <td>За транзакцію/платіж</td>
+            <td>Відсоток від суми</td>
+            <td>UAH</td>
+            <td>Каса / відділення</td>
+            <td>0,5</td>
+            <td>Діючий</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>
+              <a href="" class="prodact-link">Преміальні картки</a>
+            </td>
+            <td>Platinum</td>
+            <td>Комісія за розрахункове обслуговування неактивного рахунку по продукту</td>
+            <td>Власник карти/рахунку/скриньки</td>
+            <td>За рахунок/карту/довідку</td>
+            <td>Фіксована значення</td>
+            <td>UAH</td>
+            <td>Автоматично</td>
+            <td>20</td>
+            <td>Діючий</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>
+              <a href="" class="prodact-link">Термінові грошові перекази</a>
+            </td>
+            <td>Комісія на відправку переказів P2P на міжнародні картки в сервісах ПриватБанку</td>
+            <td>Комісія на відправку переказів P2P на міжнародні картки в сервісах ПриватБанку з гривневих карток</td>
+            <td>Платник</td>
+            <td>Сума переказу</td>
+            <td>Відсоток від суми</td>
+            <td>UAH</td>
+            <td>Каса / відділення</td>
+            <td>4,00</td>
+            <td>Діючий</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </body>
+</html>
