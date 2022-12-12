@@ -62,7 +62,7 @@
                     <div class="form-field">
                         <label class="form-label-title" for="name">Ключ тарифу</label>
                         <div class="box-textarea">
-                            <textarea class="form-textarea" name="name" rows="1" style="height: 31px" id="name"
+                            <textarea class="form-textarea" name="name" rows="1" style="height: 31px" id="name" disabled
                                 placeholder="Ключ буде сформовано автоматично"></textarea>
                         </div>
                     </div>
@@ -83,7 +83,7 @@
                     <div class="form-field">
                         <label class="form-label-title" for="name">Бізнес / Напрямок</label>
                         <div class="box-textarea">
-                            <textarea class="form-textarea" name="name" rows="1" style="height: 31px" id="name"
+                            <textarea class="form-textarea" name="name" rows="1" style="height: 31px" id="name" disabled
                                 placeholder="Формується автоматично"></textarea>
                         </div>
                     </div>
@@ -118,12 +118,22 @@
 
                 <div class="box">
                     <div class="form-field">
-                        <label class="form-label-title" for="name"><span class="note">*</span>Назва продукту</label>
+                        <label class="form-label-title" for="name"><span class="note">*</span>Назва основного продукту</label>
                         <div class="box-textarea">
                             <textarea class="form-textarea" name="name" rows="1" style="height: 31px" id="name"
-                                placeholder="Найменування продукту, за яким затверджується/актуалізується тариф"></textarea>
+                                placeholder="Найменування основного продукту, за яким затверджується/актуалізується тариф"></textarea>
                         </div>
                     </div>
+
+
+                    <div class="form-field">
+                        <label class="form-label-title" for="name">Назва вторинного продукту</label>
+                        <div class="box-textarea">
+                            <textarea class="form-textarea" name="name" rows="1" style="height: 31px" id="name"
+                                placeholder=" + Додати вторинний продуктам"></textarea>
+                        </div>
+                    </div>
+
 
                     <div class="form-field">
                         <label class="form-label-title" for="name"><span class="note">*</span>Назва послуги</label>
@@ -639,6 +649,7 @@
                         </div>
                     </div>
 
+
                     <div class="form-field">
                         <label class="form-label-title" for="name"><span class="note">*</span>Документ з рішенням КО</label>
                         <div class="box-textarea">
@@ -646,6 +657,17 @@
                                 placeholder="Додайте посилання на протокол засідання КО"></textarea>
                         </div>
                     </div>
+
+
+                    <!-- <div class="form-field">
+                        <label class="form-label-title" for="name"><span class="note">*</span>Документ з рішенням КО</label>
+                        <div class="box-textarea">
+                            <input class="form-input" id="name" placeholder="Додайте посилання на протокол засідання КО">
+                            <svg class="modal-icon" width="32px" height="32px">
+                                <use href="./images/icons.svg#link"></use>
+                            </svg>
+                        </div>
+                    </div> -->
 
                     <div class="form-field">
                         <label class="form-label-title" for="name"><span class="note">*</span>Дата затвердження КО</label>
@@ -662,21 +684,11 @@
                         </div>
                     </div>
                 </div>
-
-
-
-
-
-
-
-
-
-
-
             </form>
         </section>
         <div class="box-right">
             <div class="box-button">
+                <button type="button" class="button">Редагувати</button>
                 <button type="button" class="button">Зберегти</button>
             </div>
         </div>
