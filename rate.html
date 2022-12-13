@@ -105,10 +105,10 @@
                     </div>
 
                     <div class="form-field">
-                        <label class="form-label-title" for="name"><span class="note">*</span>ІТ-система</label>
+                        <label class="form-label-title" for="name"><span class="note">*</span>Інформаційна система</label>
                         <div class="box-textarea-last">
                             <textarea class="form-textarea" name="name" rows="1" style="height: 31px" id="name"
-                                placeholder="ІТ-система, в котрій реалізовано тариф"></textarea>
+                                placeholder="Інформаційна система, в котрій реалізовано тариф"></textarea>
                         </div>
                     </div>
                 </div>
@@ -130,7 +130,7 @@
                         <label class="form-label-title" for="name">Назва вторинного продукту</label>
                         <div class="box-textarea">
                             <textarea class="form-textarea" name="name" rows="1" style="height: 31px" id="name"
-                                placeholder=" + Додати вторинний продуктам"></textarea>
+                                placeholder=" + Додати вторинний продукт"></textarea>
                         </div>
                     </div>
 
@@ -173,6 +173,8 @@
                             <select class="drop-list">
                                 <option>Оберіть з переліку</option>
                                 <option>Стандартний</option>
+                                <option>Акційний</option>
+                                <option>Індивідуальний</option>
                                 <option>Стандартний сходи</option>
                                 <option>Акційний</option>
                                 <option>Не тарифікується</option>
@@ -183,7 +185,9 @@
                     <div class="form-field">
                         <label class="form-label-title" for="name">Країна переказу</label>
                         <div class="box-textarea">
-                            <select class="drop-list">
+                            <textarea class="form-textarea" name="name" rows="1" style="height: 31px" id="name"
+                                placeholder="Країна переказу готівкових коштів (заповнюється на основі сервісу визначення країні для термінових грошових переказів)"></textarea>
+                            <!-- <select class="drop-list">
                                 <option>Оберіть з переліку</option>
                                 <option>Тариф по Україні</option>
                                 <option>Тариф для інших країн</option>
@@ -250,7 +254,7 @@
                                 <option>Швейцарія</option>
                                 <option>Швеція</option>
                                 <option>Еквадор</option>
-                            </select>
+                            </select> -->
                         </div>
                     </div>
 
@@ -372,6 +376,11 @@
                         <div class="box-textarea-check">
                             <label class="checkbox-channel">
                                 <input type="checkbox" name="channel" value="HTML">
+                                Всі канали
+                            </label>
+                            <br>
+                            <label class="checkbox-channel">
+                                <input type="checkbox" name="channel" value="HTML">
                                 Каса / відділення
                             </label>
                             <br>
@@ -384,6 +393,12 @@
                                 <input type="checkbox" name="channel" value="JS">
                                 АТМ
                             </label>
+                            <br>
+                            <label class="checkbox-channel">
+                                <input type="checkbox" name="channel" value="JS">
+                                АТМ Ресайклінг
+                            </label>
+                            <br>
                             <label class="checkbox-channel">
                                 <input type="checkbox" name="channel" value="HTML">
                                 POS
@@ -398,6 +413,7 @@
                                 <input type="checkbox" name="channel" value="JS">
                                 П24 для юр осіб
                             </label>
+                            <br>
                             <label class="checkbox-channel">
                                 <input type="checkbox" name="channel" value="HTML">
                                 Регулярний платіж
@@ -412,6 +428,7 @@
                                 <input type="checkbox" name="channel" value="JS">
                                 3700
                             </label>
+                            <br>
                             <label class="checkbox-channel">
                                 <input type="checkbox" name="channel" value="HTML">
                                 Сайт компанії
@@ -426,6 +443,7 @@
                                 <input type="checkbox" name="channel" value="JS">
                                 QR-код
                             </label>
+                            <br>
                             <label class="checkbox-channel">
                                 <input type="checkbox" name="channel" value="HTML">
                                 Инвойс
@@ -440,6 +458,7 @@
                                 <input type="checkbox" name="channel" value="JS">
                                 Агент
                             </label>
+                            <br>
                             <label class="checkbox-channel">
                                 <input type="checkbox" name="channel" value="HTML">
                                 Автоматично
@@ -571,7 +590,7 @@
 
 
 
-                <!-- Для каталока продуктов -->
+                <!-- Для каталога продуктов -->
 
                 <!-- <div class="box">
                     <div class="form-field">
