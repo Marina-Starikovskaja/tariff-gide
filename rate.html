@@ -108,7 +108,7 @@
                         <label class="form-label-title" for="name"><span class="note">*</span>Інформаційна система</label>
                         <div class="box-textarea">
                             <textarea class="form-textarea" name="name" rows="1" style="height: 31px" id="name"
-                                placeholder="Інформаційна система, в котрій реалізовано тариф"></textarea>
+                                placeholder="Інформаційна система, в котрій реалізовано тариф (система з ПК Геном)"></textarea>
                         </div>
                     </div>
 
@@ -162,6 +162,20 @@
                     </div>
 
                     <div class="form-field">
+                        <label class="form-label-title" for="name"><span class="note">*</span>Тип тарифа</label>
+                        <div class="box-textarea">
+                            <select class="drop-list">
+                                <option>Оберіть з переліку</option>
+                                <option>Стандартний</option>
+                                <option>Акційний</option>
+                                <option>Індивідуальний</option>
+                                <option>Стандартний сходи</option>
+                                <option>Акційний</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-field">
                         <label class="form-label-title" for="name">Сегмент / Вид діяльності Клієнта</label>
                         <div class="box-textarea">
                             <textarea class="form-textarea" name="name" rows="1" style="height: 31px" id="name"
@@ -174,21 +188,6 @@
                         <div class="box-textarea">
                             <textarea class="form-textarea" name="name" rows="1" style="height: 31px" id="name"
                                 placeholder="Тарифний план / пакет"></textarea>
-                        </div>
-                    </div>
-
-                    <div class="form-field">
-                        <label class="form-label-title" for="name"><span class="note">*</span>Тип тарифа</label>
-                        <div class="box-textarea">
-                            <select class="drop-list">
-                                <option>Оберіть з переліку</option>
-                                <option>Стандартний</option>
-                                <option>Акційний</option>
-                                <option>Індивідуальний</option>
-                                <option>Стандартний сходи</option>
-                                <option>Акційний</option>
-                                <option>Не тарифікується</option>
-                            </select>
                         </div>
                     </div>
 
@@ -305,6 +304,7 @@
                                 <option>Пенсіонер</option>
                                 <option>Резидент</option>
                                 <option>Не резидент</option>
+                                <option>Страхова компанія</option>
                             </select>
                         </div>
                     </div>
@@ -318,11 +318,12 @@
                                 <option>За заїзд</option>
                                 <option>За добу</option>
                                 <option>За місяць</option>
-                                <option>За рахунок/карту/довідку</option>
+                                <option>За рахунок/карту/довідку/запит</option>
+                                <option>Комісія</option>
                                 <option>Сума платежу</option>
                                 <option>Сума переказу</option>
                                 <option>Сума залишку на рахунку/картці</option>
-                                <option>Згідно з актом виконаних робіти</option>
+                                <option>На підставі актів наданих послуг</option>
                             </select>
                         </div>
                     </div>
@@ -476,19 +477,22 @@
                                 <input type="checkbox" name="channel" value="HTML">
                                 Автоматично
                             </label>
-                            <br>
-                            <label class="checkbox-channel">
-                                <input type="checkbox" name="channel" value="CSS">
-                                Доп комісія за платіж по телефону
-                            </label>
                         </div>
                     </div>
 
                     <div class="form-field">
                         <label class="form-label-title" for="name"><span class="note">*</span>Значення тарифу</label>
-                        <div class="box-textarea-last">
+                        <div class="box-textarea">
                             <textarea class="form-textarea" name="name" rows="1" style="height: 31px" id="name"
                                 placeholder="Числове значення тарифу, який застосовується до операції/транзакції/платежу"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-field">
+                        <label class="form-label-title" for="name"><span class="note">*</span>Дод комісія за платіж по телефону</label>
+                        <div class="box-textarea-last">
+                            <textarea class="form-textarea" name="name" rows="1" style="height: 31px" id="name"
+                                placeholder="Числове значення додаткової комісії за проведення операциї по телефону"></textarea>
                         </div>
                     </div>
                 </div>
@@ -537,7 +541,7 @@
                                 <option>За транзакцію/платіж</option>
                                 <option>За добу</option>
                                 <option>За місяць</option>
-                                <option>За рахунок/карту/довідку</option>
+                                <option>За рахунок/карту/довідку/запит</option>
                                 <option>Сума платежу</option>
                                 <option>Сума переказу</option>
                                 <option>Сума залишку на рахунку/картці</option>
@@ -591,7 +595,7 @@
                                 <option>За транзакцію/платіж</option>
                                 <option>За добу</option>
                                 <option>За місяць</option>
-                                <option>За рахунок/карту/довідку</option>
+                                <option>За рахунок/карту/довідку/запит</option>
                                 <option>Сума платежу</option>
                                 <option>Сума переказу</option>
                                 <option>Сума залишку на рахунку/картці</option>
