@@ -170,7 +170,6 @@
                                 <option>Акційний</option>
                                 <option>Індивідуальний</option>
                                 <option>Стандартний сходи</option>
-                                <option>Акційний</option>
                             </select>
                         </div>
                     </div>
@@ -195,75 +194,7 @@
                         <label class="form-label-title" for="name">Країна переказу</label>
                         <div class="box-textarea">
                             <textarea class="form-textarea" name="name" rows="1" style="height: 31px" id="name"
-                                placeholder="Країна переказу готівкових коштів (заповнюється на основі сервісу визначення країні для термінових грошових переказів)"></textarea>
-                            <!-- <select class="drop-list">
-                                <option>Оберіть з переліку</option>
-                                <option>Тариф по Україні</option>
-                                <option>Тариф для інших країн</option>
-                                <option>Країни ближнього зарубіжжя</option>
-                                <option>Країни далекого зарубіжжя</option>
-                                <option>Австралія</option>
-                                <option>Австрія</option>
-                                <option>Албанія</option>
-                                <option>Аргентина</option>
-                                <option>Вірменія</option>
-                                <option>Бангладеш</option>
-                                <option>Білорусь</option>
-                                <option>Бельгія</option>
-                                <option>Болгарія</option>
-                                <option>Болівія</option>
-                                <option>Бразилія</option>
-                                <option>Великобританія</option>
-                                <option>Венесуела</option>
-                                <option>Гватемала</option>
-                                <option>Німеччина</option>
-                                <option>Гондурас</option>
-                                <option>Гонконг</option>
-                                <option>Греція</option>
-                                <option>Грузія</option>
-                                <option>Данія</option>
-                                <option>Домініканська республіка</option>
-                                <option>Ізраїль</option>
-                                <option>Індонезія</option>
-                                <option>Ірландія</option>
-                                <option>Іспанія</option>
-                                <option>Італія</option>
-                                <option>Казахстан</option>
-                                <option>Канада</option>
-                                <option>Кіпр</option>
-                                <option>Китай</option>
-                                <option>Колумбія</option>
-                                <option>Коста-Ріка</option>
-                                <option>Киргизстан</option>
-                                <option>Латвія</option>
-                                <option>Литва</option>
-                                <option>Молдова</option>
-                                <option>Монголія</option>
-                                <option>Непал</option>
-                                <option>Акційні</option>
-                                <option>Нігерія</option>
-                                <option>Нідерланди</option>
-                                <option>Норвегія</option>
-                                <option>ОАЕ</option>
-                                <option>Панама</option>
-                                <option>Парагвай</option>
-                                <option>Перу</option>
-                                <option>Росія</option>
-                                <option>Румунія BCR</option>
-                                <option>Румунія S&S</option>
-                                <option>Сальвадор</option>
-                                <option>США</option>
-                                <option>Таджикистан</option>
-                                <option>Туреччина</option>
-                                <option>Узбекистан</option>
-                                <option>Філіппіни</option>
-                                <option>Франція</option>
-                                <option>Чехія</option>
-                                <option>Чилі</option>
-                                <option>Швейцарія</option>
-                                <option>Швеція</option>
-                                <option>Еквадор</option>
-                            </select> -->
+                                placeholder="Країна переказу готівкових коштів (заповнюється на основі сервісу визначення країни для термінових грошових переказів)"></textarea>
                         </div>
                     </div>
 
@@ -300,15 +231,26 @@
                                 <option>Власник карти/рахунку/скриньки</option>
                                 <option>Мерчант</option>
                                 <option>Одержувач</option>
-                                <option>Платник</option>
+                                <option>Платник - клієнт банка</option>
+                                <option>Платник - неідентифікований клієнт</option>
                                 <option>Пенсіонер</option>
                                 <option>Резидент</option>
-                                <option>Не резидент</option>
+                                <option>Нерезидент</option>
                                 <option>Страхова компанія</option>
                             </select>
                         </div>
                     </div>
 
+                    <div class="form-field">
+                        <label class="form-label-title" for="name"><span class="note">*</span>Рахунок банку одержувача платежу</label>
+                        <div class="box-textarea">
+                            <select class="drop-list">
+                                <option>Рахунок у ПриватБанку</option>
+                                <option>Рахунок у сторонньому банку</option>
+                            </select>
+                        </div>
+                    </div>
+                    
                     <div class="form-field">
                         <label class="form-label-title" for="name"><span class="note">*</span>База нарахування комісії</label>
                         <div class="box-textarea">
