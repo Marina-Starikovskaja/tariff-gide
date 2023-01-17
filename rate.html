@@ -199,30 +199,6 @@
                     </div>
 
                     <div class="form-field">
-                        <label class="form-label-title" for="name">Сходинка</label>
-                        <div class="box-textarea">
-                            <textarea class="form-textarea" name="name" rows="1" style="height: 31px" id="name"
-                                placeholder="Порядковий номер сходинки для тарифів, у яких сума комісії залежить від суми операції/транзакції/платежу"></textarea>
-                        </div>
-                    </div>
-
-                    <div class="form-field">
-                        <label class="form-label-title" for="name">Нижня границя</label>
-                        <div class="box-textarea">
-                            <textarea class="form-textarea" name="name" rows="1" style="height: 31px" id="name"
-                                placeholder="Нижня межа діапазону сходинки"></textarea>
-                        </div>
-                    </div>
-
-                    <div class="form-field">
-                        <label class="form-label-title" for="name">Верхня границя</label>
-                        <div class="box-textarea">
-                            <textarea class="form-textarea" name="name" rows="1" style="height: 31px" id="name"
-                                placeholder="Верхня межа діапазону сходинки"></textarea>
-                        </div>
-                    </div>
-
-                    <div class="form-field">
                         <label class="form-label-title" for="name"><span class="note">*</span>Платник комісії</label>
                         <div class="box-textarea">
                             <select class="drop-list">
@@ -249,6 +225,7 @@
                                 <option>Рахунок у ПриватБанку</option>
                                 <option>Рахунок у сторонньому банку</option>
                                 <option>Рахунок у будь-якому банку</option>
+                                <option>Казначейство</option>
                             </select>
                         </div>
                     </div>
@@ -425,25 +402,24 @@
                     </div>
 
                     <div class="form-field">
-                        <label class="form-label-title" for="name"><span class="note">*</span>Значення тарифу</label>
+                        <label class="form-label-title" for="name"><span class="note">*</span>Дод комісія за платіж по телефону</label>
                         <div class="box-textarea">
                             <textarea class="form-textarea" name="name" rows="1" style="height: 31px" id="name"
-                                placeholder="Числове значення тарифу, який застосовується до операції/транзакції/платежу"></textarea>
+                                placeholder="Числове значення додаткової комісії за проведення операциї по телефону"></textarea>
                         </div>
                     </div>
 
-                    <div class="form-field">
-                        <label class="form-label-title" for="name"><span class="note">*</span>Дод комісія за платіж по телефону</label>
+                    <div class="form-field-tariff">
+                        <label class="form-label-title" for="name"><span class="note">*</span>Значення тарифу</label>
                         <div class="box-textarea-last">
                             <textarea class="form-textarea" name="name" rows="1" style="height: 31px" id="name"
-                                placeholder="Числове значення додаткової комісії за проведення операциї по телефону"></textarea>
+                                placeholder="Числове значення тарифу, який застосовується до операції/транзакції/платежу"></textarea>
                         </div>
                     </div>
                 </div>
 
 
-
-                <div class="box">
+                <div class="box box-hide">
                     <div class="form-field">
                         <label class="form-label-title" for="name">Мін сума комісії</label>
                         <div class="box-textarea">
@@ -451,7 +427,7 @@
                                 placeholder="Мінімальна сума комісії, що стягується"></textarea>
                         </div>
                     </div>
-
+                
                     <div class="form-field">
                         <label class="form-label-title" for="name">Валюта мін комісії</label>
                         <div class="box-textarea">
@@ -465,7 +441,7 @@
                             </select>
                         </div>
                     </div>
-
+                
                     <div class="form-field">
                         <label class="form-label-title" for="name">Тип мин комісії</label>
                         <div class="box-textarea">
@@ -476,7 +452,7 @@
                             </select>
                         </div>
                     </div>
-
+                
                     <div class="form-field">
                         <label class="form-label-title" for="name">База нарахування мін комісії</label>
                         <div class="box-textarea-last">
@@ -495,9 +471,7 @@
                 </div>
 
 
-
-
-                <div class="box">
+                <div class="box box-hide">
                     <div class="form-field">
                         <label class="form-label-title" for="name">Макс сума комісії</label>
                         <div class="box-textarea">
@@ -614,6 +588,156 @@
                 </div> -->
 
 
+
+
+
+                <div class="box box-step">
+                    <div class="form-field">
+                        <label class="form-label-title" for="name">Сходинка</label>
+                        <div class="box-textarea">
+                            <textarea class="form-textarea" name="name" rows="1" style="height: 31px" id="name"
+                                placeholder="Порядковий номер сходинки для тарифів, у яких сума комісії залежить від суми операції/транзакції/платежу"></textarea>
+                        </div>
+                        <button class="icon-close-button" data-action="close-modal">
+                            <svg class="icon-close" width="18px" height="18px">
+                                <use href="./images/icons.svg#icon-close"></use>
+                            </svg>
+                        </button>
+                    </div>
+                
+                    <div class="form-field">
+                        <label class="form-label-title" for="name">Нижня границя</label>
+                        <div class="box-textarea">
+                            <textarea class="form-textarea" name="name" rows="1" style="height: 31px" id="name"
+                                placeholder="Нижня межа діапазону сходинки"></textarea>
+                        </div>
+                    </div>
+                
+                    <div class="form-field">
+                        <label class="form-label-title" for="name">Верхня границя</label>
+                        <div class="box-textarea">
+                            <textarea class="form-textarea" name="name" rows="1" style="height: 31px" id="name"
+                                placeholder="Верхня межа діапазону сходинки"></textarea>
+                        </div>
+                    </div>
+                
+                    <div class="form-field">
+                        <label class="form-label-title" for="name"><span class="note">*</span>Значення тарифу</label>
+                        <div class="box-textarea">
+                            <textarea class="form-textarea" name="name" rows="1" style="height: 31px" id="name"
+                                placeholder="Числове значення тарифу, який застосовується до операції/транзакції/платежу"></textarea>
+                        </div>
+                    </div>
+
+                
+                    <div class="form-field">
+                        <label class="form-label-title" for="name">Мін сума комісії</label>
+                        <div class="box-textarea">
+                            <textarea class="form-textarea" name="name" rows="1" style="height: 31px" id="name"
+                                placeholder="Мінімальна сума комісії, що стягується"></textarea>
+                        </div>
+                    </div>
+                
+                    <div class="form-field">
+                        <label class="form-label-title" for="name">Валюта мін комісії</label>
+                        <div class="box-textarea">
+                            <select class="drop-list">
+                                <option>Оберіть з переліку</option>
+                                <option>UAH</option>
+                                <option>USD</option>
+                                <option>EUR</option>
+                                <option>USD екв</option>
+                                <option>EUR екв</option>
+                            </select>
+                        </div>
+                    </div>
+                
+                    <div class="form-field">
+                        <label class="form-label-title" for="name">Тип мин комісії</label>
+                        <div class="box-textarea">
+                            <select class="drop-list">
+                                <option>Оберіть з переліку</option>
+                                <option>Відсоток від суми</option>
+                                <option>ЗФіксована значення</option>
+                            </select>
+                        </div>
+                    </div>
+                
+                    <div class="form-field">
+                        <label class="form-label-title" for="name">База нарахування мін комісії</label>
+                        <div class="box-textarea">
+                            <select class="drop-list">
+                                <option>Оберіть з переліку</option>
+                                <option>За транзакцію/платіж</option>
+                                <option>За добу</option>
+                                <option>За місяць</option>
+                                <option>За рахунок/карту/довідку/запит</option>
+                                <option>Сума платежу</option>
+                                <option>Сума переказу</option>
+                                <option>Сума залишку на рахунку/картці</option>
+                            </select>
+                        </div>
+                    </div>
+                
+                
+                
+                
+                    <div class="form-field">
+                        <label class="form-label-title" for="name">Макс сума комісії</label>
+                        <div class="box-textarea">
+                            <textarea class="form-textarea" name="name" rows="1" style="height: 31px" id="name"
+                                placeholder="Максимальна сума комісії, що стягується"></textarea>
+                        </div>
+                    </div>
+                
+                    <div class="form-field">
+                        <label class="form-label-title" for="name">Валюта макс комісії</label>
+                        <div class="box-textarea">
+                            <select class="drop-list">
+                                <option>Оберіть з переліку</option>
+                                <option>UAH</option>
+                                <option>USD</option>
+                                <option>EUR</option>
+                                <option>USD екв</option>
+                                <option>EUR екв</option>
+                            </select>
+                        </div>
+                    </div>
+                
+                    <div class="form-field">
+                        <label class="form-label-title" for="name">Тип макс комісії</label>
+                        <div class="box-textarea">
+                            <select class="drop-list">
+                                <option>Оберіть з переліку</option>
+                                <option>Відсоток від суми</option>
+                                <option>ЗФіксована значення</option>
+                            </select>
+                        </div>
+                    </div>
+                
+                    <div class="form-field">
+                        <label class="form-label-title" for="name">База нарахування макс комісії</label>
+                        <div class="box-textarea-last">
+                            <select class="drop-list">
+                                <option>Оберіть з переліку</option>
+                                <option>За транзакцію/платіж</option>
+                                <option>За добу</option>
+                                <option>За місяць</option>
+                                <option>За рахунок/карту/довідку/запит</option>
+                                <option>Сума платежу</option>
+                                <option>Сума переказу</option>
+                                <option>Сума залишку на рахунку/картці</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="form-field">
+                        <button type="button" class="prodact-link button-add-step" data-action="open-step"> + Додати сходинку </button>
+                </div>
+
+
                 <div class="box">
                     <div class="form-field">
                         <label class="form-label-title" for="calendar"><span class="note">*</span>Дата початку дії тарифу</label>
@@ -672,7 +796,9 @@
                 <button type="button" class="button">Зберегти</button>
             </div>
         </div>
-    </div>    
+    </div>
+    
+    <script src="./js/06-modal.js" type="module"></script>
 </body>
 
 </html>

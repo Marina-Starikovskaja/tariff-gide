@@ -362,3 +362,85 @@ td {
     font-family: SimSun, sans-serif;
     line-height: 1;
 }
+
+
+.box-step {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  overflow: auto;
+  position: absolute;
+
+}
+
+
+
+body.show-step .box-step {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
+  position: relative;
+}
+
+.form-field-tariff {
+  display: flex;
+  align-items: center;
+}
+
+
+body.hide-box .form-field-tariff {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    overflow: auto;
+    position: absolute;
+}
+
+
+body.hide-box .box-hide {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  overflow: auto;
+  position: absolute;
+}
+
+.button-add-step {
+    border: none;
+    background: transparent;
+    float: left;
+    background-color: transparent;
+}
+
+
+
+
+
+
+
+.icon-close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: transparent;
+  float: left;
+  background-color: transparent;
+}
+
+.icon-close {
+  fill: rgba(0, 0, 0, .85);
+}
+
+.icon-close:hover,
+.icon-close:focus {
+  fill: #75af26;
+}
