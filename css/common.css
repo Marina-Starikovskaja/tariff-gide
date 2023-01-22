@@ -364,7 +364,7 @@ td {
 }
 
 
-.box-step {
+.box-step-2 {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
@@ -373,37 +373,37 @@ td {
 
 }
 
-
-
-body.show-step .box-step {
+body.show-step .box-step-2 {
   opacity: 1;
   visibility: visible;
   pointer-events: initial;
   position: relative;
 }
 
-.form-field-tariff {
+
+.box-tariff {
   display: flex;
   align-items: center;
 }
 
 
-body.hide-box .form-field-tariff {
+
+/* body.hide-box .form-field-tariff {
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
     overflow: auto;
     position: absolute;
-}
+} */
 
 
-body.hide-box .box-hide {
+/* body.hide-box .box-hide {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
   overflow: auto;
   position: absolute;
-}
+} */
 
 .button-add-step {
     border: none;
@@ -443,4 +443,16 @@ body.hide-box .box-hide {
 .icon-close:hover,
 .icon-close:focus {
   fill: #75af26;
+}
+
+
+
+.drop-list-type {
+  line-height: 1.5;
+  border: none;
+  width: 95% !important;
+  padding: 0;
+  color: rgba(0, 0, 0, .54);
+  line-height: 1.43;
+  letter-spacing: .51px;
 }
