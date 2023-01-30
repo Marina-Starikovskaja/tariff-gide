@@ -236,10 +236,12 @@
                             <select class="drop-list">
                                 <option>Оберіть з переліку</option>
                                 <option>За транзакцію/платіж</option>
+                                <option>За платіж інвойс</option>
                                 <option>За заїзд</option>
                                 <option>За добу</option>
                                 <option>За місяць</option>
                                 <option>За рахунок/карту/довідку/запит</option>
+                                <option>Сума платежу по інвойс</option>
                                 <option>Комісія</option>
                                 <option>Сума платежу</option>
                                 <option>Сума переказу</option>
@@ -316,7 +318,12 @@
                             <br>
                             <label class="checkbox-channel">
                                 <input type="checkbox" name="channel" value="HTML">
-                                Каса / відділення
+                                Каса
+                            </label>
+                            <br>
+                            <label class="checkbox-channel">
+                                <input type="checkbox" name="channel" value="HTML">
+                                Відділення банку
                             </label>
                             <br>
                             <label class="checkbox-channel">
@@ -344,6 +351,13 @@
                                 П24 для фіз осіб
                             </label>
                             <br>
+
+                            <label class="checkbox-channel">
+                                <input type="checkbox" name="channel" value="CSS">
+                                Мобільний додаток П24
+                            </label>
+                            <br>
+
                             <label class="checkbox-channel">
                                 <input type="checkbox" name="channel" value="JS">
                                 П24 для юр осіб
@@ -361,7 +375,12 @@
                             <br>
                             <label class="checkbox-channel">
                                 <input type="checkbox" name="channel" value="JS">
-                                3700
+                                По телефону
+                            </label>
+                            <br>
+                            <label class="checkbox-channel">
+                                <input type="checkbox" name="channel" value="JS">
+                                Платіж через IVR
                             </label>
                             <br>
                             <label class="checkbox-channel">
@@ -379,11 +398,16 @@
                                 QR-код
                             </label>
                             <br>
-                            <label class="checkbox-channel">
+                            <!-- <label class="checkbox-channel">
                                 <input type="checkbox" name="channel" value="HTML">
-                                Инвойс
+                                Каса (інвойс)
                             </label>
-                            <br>
+                            <br> -->
+                            <!-- <label class="checkbox-channel">
+                                <input type="checkbox" name="channel" value="HTML">
+                                Відділення банку (інвойс)
+                            </label>
+                            <br> -->
                             <label class="checkbox-channel">
                                 <input type="checkbox" name="channel" value="CSS">
                                 В 1 клик
@@ -947,7 +971,7 @@
         </div>
     </div>
     
-    <script src="./js/06-modal.js" type="module"></script>
+    <script src="./js/filters.js" type="module"></script>
 </body>
 
 </html>
