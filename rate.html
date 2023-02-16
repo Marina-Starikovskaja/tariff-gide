@@ -60,10 +60,18 @@
             <form>
                 <div class="box">
                     <div class="form-field">
-                        <label class="form-label-title" for="name">Ключ тарифу</label>
+                        <label class="form-label-title" for="name">Alias тарифу</label>
                         <div class="box-textarea">
                             <textarea class="form-textarea" name="name" rows="1" style="height: 31px" id="name" disabled
-                                placeholder="Ключ буде сформовано автоматично"></textarea>
+                                placeholder="Alias тарифу буде сформовано автоматично"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-field">
+                        <label class="form-label-title" for="name">Ідентифікатор тарифу</label>
+                        <div class="box-textarea">
+                            <textarea class="form-textarea" name="name" rows="1" style="height: 31px" id="name" disabled
+                                placeholder="Ідентифікатор тарифу буде сформовано автоматично"></textarea>
                         </div>
                     </div>
 
@@ -74,7 +82,6 @@
                                 <option>Оберіть з переліку</option>
                                 <option>Діючий</option>
                                 <option>Закритий</option>
-                                <option>На погодженні</option>
                                 <option>Не активний</option>
                             </select>
                         </div>
@@ -106,17 +113,9 @@
 
                     <div class="form-field">
                         <label class="form-label-title" for="name"><span class="note">*</span>Інформаційна система</label>
-                        <div class="box-textarea">
+                        <div class="x-textarea-last">
                             <textarea class="form-textarea" name="name" rows="1" style="height: 31px" id="name"
                                 placeholder="Інформаційна система, в котрій реалізовано тариф (система з ПК Геном)"></textarea>
-                        </div>
-                    </div>
-
-                    <div class="form-field">
-                        <label class="form-label-title" for="name">Інформаційна підсистема</label>
-                        <div class="box-textarea-last">
-                            <textarea class="form-textarea" name="name" rows="1" style="height: 31px" id="name"
-                                placeholder="Інформаційна підсистема, в котрій реалізовано тариф"></textarea>
                         </div>
                     </div>
 
@@ -333,12 +332,7 @@
                             <br>
                             <label class="checkbox-channel">
                                 <input type="checkbox" name="channel" value="JS">
-                                АТМ
-                            </label>
-                            <br>
-                            <label class="checkbox-channel">
-                                <input type="checkbox" name="channel" value="JS">
-                                АТМ Ресайклінг
+                                АТМ/АТМ-Ресайклінг
                             </label>
                             <br>
                             <label class="checkbox-channel">
@@ -348,19 +342,7 @@
                             <br>
                             <label class="checkbox-channel">
                                 <input type="checkbox" name="channel" value="CSS">
-                                П24 для фіз осіб
-                            </label>
-                            <br>
-
-                            <label class="checkbox-channel">
-                                <input type="checkbox" name="channel" value="CSS">
-                                Мобільний додаток П24
-                            </label>
-                            <br>
-
-                            <label class="checkbox-channel">
-                                <input type="checkbox" name="channel" value="JS">
-                                П24 для юр осіб
+                                ПриватП24
                             </label>
                             <br>
                             <label class="checkbox-channel">
